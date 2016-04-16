@@ -27,7 +27,7 @@ sudo dnf -y install vlc \
                     java-openjdk \
                     oathtool \
                     xclip \
-                    powertop \
+                    powertop 
                     
 # Setup Powertop service 
 cat << EOF | sudo tee /usr/lib/systemd/system/powertop.service
