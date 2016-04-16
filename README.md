@@ -66,3 +66,28 @@
 9. After the review click on **Accept Changes**
 10. Before you click on **Begin Installation**, make appropriate software selection by clicking on the **Software Selection** option on the main screen which will lead you to the screen like the one shown below
   [![](.images/fom-software-choices.jpg)](.images/fom-software-choices.jpg) 
+
+## Post-Installation Steps
+
+1. Run the following command with your workstation connected to a wired network connection. This is bring you up to speed on many updates that you might need. Make sure the user you are logged into has sudoer permissions.
+
+  ```sh
+  curl https://github.com/vchintal/fedora23-on-mac/setup.sh | sh`
+  ```
+
+2. To get the right drivers installed for wireless connectivity, run the following command, [courtesy of Corey](https://onpub.com/install-broadcom-linux-wi-fi-driver-on-fedora-23-s7-a192)
+
+  ```sh 
+  wget http://git.io/vuLC7 -v -O fedora23_broadcom_wl_install.sh && sh ./fedora23_broadcom_wl_install.sh;
+  ```
+
+**Note!**
+
+> The above command may fail citing some error as mentioned in the blog. This is related to a kernel mismatch. The workaround I discovered is to edit the **Makefile** in the folder **hybrid_wl_f23** (that got created in the folder where you ran the command from) and search/replace **\`uname -r\`** with **4.2.3-300.fc23.x86_64** and then run the following commands (in the same folder):
+
+```sh 
+make clean && make
+sudo make install
+sudo depmod -a
+```
+
