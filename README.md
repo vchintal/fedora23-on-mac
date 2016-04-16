@@ -72,7 +72,7 @@
 1. Run the following command with your workstation connected to a wired network connection. This is bring you up to speed on many updates that you might need. Make sure the user you are logged into has sudoer permissions.
 
   ```sh
-  curl https://github.com/vchintal/fedora23-on-mac/setup.sh | sh`
+  curl https://raw.githubusercontent.com/vchintal/fedora23-on-mac/master/setup.sh | sh
   ```
 
 2. To get the right drivers installed for wireless connectivity, run the following command, [courtesy of Corey](https://onpub.com/install-broadcom-linux-wi-fi-driver-on-fedora-23-s7-a192)
