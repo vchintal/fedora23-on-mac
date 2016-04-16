@@ -40,20 +40,29 @@
   
 ## Creating a new partition
 
-1. Open **Finder → Utilities → Disk Utility**. Choose the top-level SSD on the left and **Partition** on the right as shown in the image below. 
+1. Open **Finder → Utilities → Disk Utility**. Choose the top-level SSD on the left and **Partition** on the right as shown in the image below.
+  [![](.images/fom-disk-utilities-mac-partition.png)](.images/fom-disk-utilities-mac-partition.png)
 2. Click on the **+** symbol and a new partition and call it **Fedora**, make selections such that your choices resemble the image below and click **Apply**
+  [![](.images/fom-add-fedora-partition.png)](.images/fom-add-fedora-partition.png)
 3. The disk layout should now look like the image below.
+  [![](.images/fom-fedora-partition.png)](.images/fom-fedora-partition.png)
 
 ## Fedora 23 Installation
 
 1. Open this page in your phone/tablet or any other device/computer
 2. Plug-in the USB and restart the Mac. Before the Mac could boot up press and hold the **alt/option** button. You should be presented with a screen that resembles the image below. Choose **Fedora Media** and double-click/enter.
+  [![](.images/fom-fedora-usb.jpg)](.images/fom-fedora-usb.jpg)
 3. Choose the default **Language** and **Keyboard** and continue
 4. When presented with a screen like the one shown below, click on the **Installation Destination**
+  [![](.images/fom-install-screen.jpg)](.images/fom-install-screen.jpg)
 5. Find the **Fedora** partition, as shown in the image below, and delete it; this will create space for your installation
-6. Click on the link that says **Click here to create them automatically**, as shown in the image
+  [![](.images/fom-find-fedora-partition.jpg)](.images/fom-find-fedora-partition.jpg)
+6. Click on tha link that says **Click here to create them automatically**, as shown in the image
+  [![](.images/fom-deleted-fedora-partition.jpg)](.images/fom-deleted-fedora-partition.jpg)
 7. Post creation your partitions should look like the image below. Click **Done** on the top left hand corner.
+  [![](.images/fom-auto-mount-point-creation.jpg)](.images/fom-auto-mount-point-creation.jpg)
 8. You will now be presented with **Summary of Changes**, make sure you review them and be 100% sure that your Mac partition is unaffected as shown in the image below
+  [![](.images/fom-apply-partition-changes.jpg)](.images/fom-apply-partition-changes.jpg)
 9. After the review click on **Accept Changes**
 10. Before you click on **Begin Installation**, make appropriate software selection by clicking on the **Software Selection** option on the main screen which will lead you to the screen like the one shown below
-  
+  [![](.images/fom-software-choices.jpg)](.images/fom-software-choices.jpg) 
